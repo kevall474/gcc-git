@@ -124,7 +124,7 @@ package_gcc-libs-git() {
   conflicts=(gcc-libs)
 
   cd gcc-build
-  make -C $CHOST/libgcc DESTDIR="$pkgdir" install-shared
+  make -j$(nproc) -C $CHOST/libgcc DESTDIR="$pkgdir" install-shared
   rm -f "$pkgdir/$_libdir/libgcc_eh.a"
 
   for lib in libatomic \
