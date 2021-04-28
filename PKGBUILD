@@ -24,7 +24,7 @@ license=(GPL LGPL FDL custom)
 url='https://gcc.gnu.org'
 makedepends=('binutils' 'libmpc' 'gcc-ada' 'doxygen' 'lib32-glibc' 'lib32-gcc-libs' 'python' 'git')
 checkdepends=(dejagnu inetutils)
-options=(!emptydirs)
+options=(!emptydirs !buildflags)
 _libdir=usr/lib/gcc/$CHOST/12.0.0
 source=(#'git+https://gcc.gnu.org/git/gcc.git'
         "http://isl.gforge.inria.fr/isl-${_islver}.tar.xz"
