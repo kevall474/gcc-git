@@ -107,13 +107,13 @@ build() {
   make -j$(nproc) -C $CHOST/libstdc++-v3/doc doc-man-doxygen
 }
 
-check() {
-  cd gcc-build
-
-  # do not abort on error as some are "expected"
-  make -j$(nproc) -k check || true
-  "$srcdir/gcc/contrib/test_summary"
-}
+#check() {
+#  cd gcc-build
+#
+#  # do not abort on error as some are "expected"
+#  make -j$(nproc) -k check || true
+#  "$srcdir/gcc/contrib/test_summary"
+#}
 
 package_gcc-libs-git() {
   pkgdesc='Runtime libraries shipped by GCC'
