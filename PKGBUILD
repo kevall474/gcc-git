@@ -37,7 +37,8 @@ md5sums=(#'SKIP'
 
 pkgver(){
  cd gcc
- echo $(cat gcc/BASE-VER).r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)
+ #echo $(cat gcc/BASE-VER).r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)
+ echo 12.0.0.$(date -I | sed 's/-/_/' | sed 's/-/_/').$(git rev-list --count HEAD).$(git rev-parse --short HEAD)
 }
 
 prepare(){
