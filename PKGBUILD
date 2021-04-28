@@ -14,7 +14,7 @@
 # NOTE: libtool requires rebuilt with each new gcc version
 
 pkgname=('gcc-git' 'gcc-libs-git' 'gcc-fortran-git' 'gcc-objc-git' 'gcc-ada-git' 'gcc-go-git' 'lib32-gcc-libs-git' 'gcc-d-git')
-pkgver=11.0.1
+pkgver=12.0.0
 _majorver=${pkgver%%.*}
 _islver=0.23
 pkgrel=1
@@ -25,7 +25,7 @@ url='https://gcc.gnu.org'
 makedepends=('binutils' 'libmpc' 'gcc-ada' 'doxygen' 'lib32-glibc' 'lib32-gcc-libs' 'python' 'git')
 checkdepends=(dejagnu inetutils !buildflags)
 options=(!emptydirs)
-_libdir=usr/lib/gcc/$CHOST/11.0.1
+_libdir=usr/lib/gcc/$CHOST/12.0.0
 source=(#'git+https://gcc.gnu.org/git/gcc.git'
         "http://isl.gforge.inria.fr/isl-${_islver}.tar.xz"
         "c89"
