@@ -16,7 +16,7 @@
 pkgname=('gcc-git' 'gcc-libs-git' 'gcc-fortran-git' 'gcc-objc-git' 'gcc-ada-git' 'gcc-go-git' 'lib32-gcc-libs-git' 'gcc-d-git')
 pkgver=12.0.0
 _majorver=${pkgver%%.*}
-_islver=0.23
+_islver=0.24
 pkgrel=1
 pkgdesc='The GNU Compiler Collection'
 arch=(x86_64)
